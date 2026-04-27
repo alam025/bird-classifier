@@ -1,104 +1,67 @@
-# Image Classifier App
+```markdown
+<!-- Capsule Render Header -->
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:667eea,100:764ba2&height=150&section=header&text=Image%20Classifier%20App&fontSize=50&fontColor=FFFFFF" />
+</div>
 
-Fine-tuned ResNet-50 achieving 91% Top-5 accuracy on CUB-200 dataset
+<!-- Typing SVG -->
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?color=0xF7B2A1&size=30&lines=Fine-tuned+ResNet-50+achieving+91%25+Top-5+accuracy;Built+with+Python+%7C+PyTorch+%7C+Gradio+%7C+AWS+S3" />
+</div>
 
-## About
+<!-- Badges -->
+<div align="center">
+  ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=ffffff)
+  ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2A?style=flat&logo=pytorch&logoColor=ffffff)
+  ![Gradio](https://img.shields.io/badge/Gradio-00B140?style=flat&logo=gradio&logoColor=ffffff)
+  ![AWS S3](https://img.shields.io/badge/AWS%20S3-569A31?style=flat&logo=amazonaws&logoColor=ffffff)
+</div>
 
-Fine-tuned ResNet-50 on CUB-200 dataset achieving 91% Top-5 accuracy for 200-class bird species classification
+<!-- Mermaid Diagram -->
+```mermaid
+graph TD;
+    A[User] -->|Uploads Image| B[Gradio Interface]
+    B --> C[Model Prediction]
+    C --> D[ResNet-50]
+    D -->|Returns Result| B
+    B -->|Displays Result| A
+```
 
-Built Gradio web UI with image upload, preprocessing pipeline, and real-time prediction with confidence scores
+<!-- Performance Metrics Table -->
+| Metric              | Value                       |
+|---------------------|-----------------------------|
+| Model               | ResNet-50                   |
+| Top-5 Accuracy      | 91%                         |
+| Dataset             | CUB-200                    |
+| Deployment Platform  | HuggingFace Spaces          |
 
-Integrated AWS S3 for model checkpointing and deployed inference endpoint on HuggingFace Spaces
+<!-- Quick Start -->
+## Quick Start
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/alam025/bird-classifier.git
+   ```
+2. Install the dependencies:
+   ```bash
+   cd bird-classifier
+   pip install -r requirements.txt
+   ```
+3. Run the application:
+   ```bash
+   python app.py
+   ```
 
+<!-- Tech Stack -->
 ## Tech Stack
+<div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" height="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" width="40" height="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradio/gradio-original.svg" width="40" height="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" width="40" height="40" />
+</div>
 
-- Python
-- PyTorch
-- Gradio
-- AWS S3
-
-## Features
-
-- Production-ready implementation with error handling and logging
-- Comprehensive documentation and code comments
-- Modular architecture following clean code principles
-- CI/CD ready with GitHub Actions workflow included
-- Environment-based configuration for dev/staging/prod
-
-## Getting Started
-
-### Prerequisites
-
-- Python
-- PyTorch
-- Gradio
-- AWS S3
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/alam025/bird-classifier.git
-cd bird-classifier
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Configure environment
-cp .env.example .env
-# Edit .env with your configuration
-
-# Run the application
-npm run dev  # or python main.py
+<!-- Capsule Render Footer -->
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:667eea,100:764ba2&height=150&section=footer&text=Thank%20You%20for%20Visiting!&fontSize=30&fontColor=FFFFFF" />
+</div>
 ```
-
-## Project Structure
-
-```
-bird-classifier/
-├── src/                    # Source code
-│   ├── components/         # Reusable components
-│   ├── utils/              # Utility functions
-│   └── config/             # Configuration files
-├── tests/                  # Test suite
-├── docs/                   # Documentation
-├── .env.example            # Environment variable template
-├── .github/                # GitHub Actions workflows
-│   └── workflows/
-│       └── ci.yml
-└── README.md
-```
-
-## Key Implementation Highlights
-
-1. Fine-tuned ResNet-50 on CUB-200 dataset achieving 91% Top-5 accuracy for 200-class bird species classification
-2. Built Gradio web UI with image upload, preprocessing pipeline, and real-time prediction with confidence scores
-3. Integrated AWS S3 for model checkpointing and deployed inference endpoint on HuggingFace Spaces
-
-## Performance Metrics
-
-- **Accuracy / Quality**: See benchmark results in `docs/benchmarks.md`
-- **Latency**: Optimized for production workloads
-- **Scalability**: Tested under concurrent load
-
-## Deployment
-
-This project is configured for deployment on **HuggingFace Spaces**.
-
-Detailed deployment instructions are available in `docs/deployment.md`.
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/your-feature`)
-3. Commit your changes (`git commit -m 'Add your feature'`)
-4. Push to the branch (`git push origin feature/your-feature`)
-5. Open a Pull Request
-
-## License
-
-MIT License — see `LICENSE` for details.
-
----
-
-*Built with Python, PyTorch, Gradio and 1 more*
